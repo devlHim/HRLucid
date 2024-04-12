@@ -12,7 +12,7 @@ const App = () => {
   return (
     <>
       <BrowserRouter>
-        <div style={{ height: "90%", display: 'flex', gap: '20px' }}>
+        <div>
           <Routes>
             {routes.map((route) => (
               <Route

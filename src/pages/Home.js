@@ -1,10 +1,8 @@
 import React, { useState } from 'react';
 import Chatbot from '../component/Chatbot';// Import Chatbot component
 import './Home.scss'
-
 const Home = () => {
   const [showChatbot, setShowChatbot] = useState(false);
-  
   const toggleChatbot = () => {
     setShowChatbot(!showChatbot);
   };
