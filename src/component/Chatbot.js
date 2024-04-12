@@ -23,14 +23,14 @@ const Chatbot = ({ endpoint }) => {
           style={{ width: "50px", height: "50px" }}
         />
       </div>
-      {showChatbot && <div className='chat-overlay'>
+      <div className={`chat-overlay ${showChatbot ? 'open' : ''}`}>
         <button className='close-button' onClick={toggleChatbot}>X</button> 
         <iframe
           src="http://wbztdnasv101:8503/"
           title="CHatbot"
           className='chatbot'
         ></iframe>
-      </div>}
+      </div>
     </>
    
   );
