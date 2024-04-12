@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import chatIcon from "./chatbot.png"
 import './Chatbot.scss'
 
 const Chatbot = ({ endpoint }) => {
@@ -17,7 +18,7 @@ const Chatbot = ({ endpoint }) => {
      {/* Chatbot Icon */}
      <div className='chatbot-Icon' onClick={toggleChatbot}>
         <img
-          src="/path/to/chatbot-icon.png"
+          src={chatIcon}
           alt="Chatbot Icon"
           style={{ width: "50px", height: "50px" }}
         />
